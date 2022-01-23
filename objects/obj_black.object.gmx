@@ -118,10 +118,11 @@ golpe.poder = 1;
             <kind>1</kind>
             <string>///Movimiento
 
-var key_right, key_left;
+var key_right, key_left, key_jump;
 
-key_right   =  keyboard_check    (vk_right);
-key_left    = -keyboard_check    (vk_left);
+key_right   =  keyboard_check           (vk_right);
+key_left    = -keyboard_check           (vk_left);
+key_jump    =  keyboard_check_pressed   (vk_space);
 
 mov = key_right + key_left;
 
